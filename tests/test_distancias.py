@@ -12,9 +12,10 @@ from src.problema1 import distancia_entre_puntos
             [1, 2, 3],
             [1, 2, 3],
             2.83,
-        ),  # Trayectoria recta de longitud sqrt(2^2 + 2^2 + 2^2) = 2.83
+        ),  # Trayectoria recta de longitud
         ([0, 3, 6], [0, 4, 8], 10.00),  # Trayectoria triangular
         ([0], [0], 0.0),  # Un solo punto (distancia cero)
+        ([0, 2, 5, 8, 12, 14, 22], [0, 3, -3, 2, -2, 5, 1], 38.03),  # varios puntos
     ],
 )
 def test_distancia_entre_puntos(x_coords, y_coords, expected):
